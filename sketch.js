@@ -38,7 +38,6 @@ class Particle {
             pos: { ...this.pos },
         })
         var max = random(2, TRAIL)
-        debugger;
         if (this.trail.length > max)
             this.trail.splice(0, 1)
     }
