@@ -9,7 +9,9 @@
 <body>
     <script>
         fetch('https://codifyinditest.com/script_test/api-test/',{
-            mode: 'cors'
+            mode: 'cors',
+            credentials:'same-origin',
+            redirect: 'follow'
         }).then(function(response){
             console.log('response', response)
         })
