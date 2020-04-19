@@ -12,14 +12,14 @@
     <script>
         fetch('https://codifyinditest.com/script_test/api-test/', {
             method: 'GET',
-            headers: {
+            headers: new Headers({
                 'Content-Type': 'application/json',
                 'Host': 'codifyinditest.com',
                 'Sec-Fetch-Dest': 'document',
                 'Sec-Fetch-Mode': 'navigate',
                 'Sec-Fetch-Site': 'cross-site',
                 'Sec-Fetch-User': '?1'
-            }
+            })
         }).then(function (response) {
             console.log('response', response)
         })
