@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matrix</title>
 </head>
+
 <body>
     <script>
-        fetch('https://codifyinditest.com/script_test/api-test/',{
-            mode: 'cors',
-            credentials:'same-origin',
-            redirect: 'follow',
-            headers: new Headers({
-                'Access-Control-Allow-Origin': 'https://flamboyant-villani-94d83c.netlify.app'
-            })
-        }).then(function(response){
+        fetch('https://codifyinditest.com/script_test/api-test/', {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'API-Key': 'secret'
+            }
+        }).then(function (response) {
             console.log('response', response)
         })
     </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
     <script src="sketch.js"></script> -->
 </body>
+
 </html>
