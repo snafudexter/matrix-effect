@@ -11,7 +11,10 @@
         fetch('https://codifyinditest.com/script_test/api-test/',{
             mode: 'cors',
             credentials:'same-origin',
-            redirect: 'follow'
+            redirect: 'follow',
+            headers: new Headers({
+                'Access-Control-Allow-Origin': '*'
+            })
         }).then(function(response){
             console.log('response', response)
         })
