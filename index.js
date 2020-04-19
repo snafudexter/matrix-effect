@@ -1,6 +1,8 @@
+let headers = new Headers({"Content-Type": 'text/html'});
+
 fetch('https://codifyinditest.com/script_test/api-test',{
-    credentials: 'include',
-    redirect: 'follow'
+    headers,
+    credentials: 'same-origin'
 }).then(function(response){
     console.log('response', response)
 })
