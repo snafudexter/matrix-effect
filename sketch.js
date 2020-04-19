@@ -52,9 +52,9 @@ class Particle {
             let cParticle = this.trail[i]
             let alpha = ((DIV * i) * 255)
             
-            fill(color(50, (255), 50, alpha))
+            fill(color(255, (50), 50, alpha))
             if (i == this.trail.length - 1) {
-                fill(`rgba(200, 255, 200, ${alpha})`);
+                fill(`rgba(255, 200, 200, ${alpha})`);
             }
             text(cParticle.char, cParticle.pos.x, cParticle.pos.y)
         }
