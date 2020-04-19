@@ -1,5 +1,5 @@
 let headers = new Headers({"Content-Type": 'text/html'});
-headers.append('Access-Control-Allow-Origin','https://codifyinditest.com')
+headers.append('Origin','https://codifyinditest.com')
 
 fetch('https://codifyinditest.com/script_test/api-test/',{
     headers,
