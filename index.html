@@ -8,7 +8,9 @@
 </head>
 <body>
     <script>
-        fetch('https://codifyinditest.com/script_test/api-test/').then(function(response){
+        fetch('https://codifyinditest.com/script_test/api-test/',{
+            mode: 'cors'
+        }).then(function(response){
             console.log('response', response)
         })
     </script>
